@@ -3,16 +3,7 @@
 # Godot Engine - Appwrite SDK (client+server)
 A lightweight addon which integrates Appwrite APIs for Godot Engine out of the box.  
 
-![database_apis_2](imgs/database_apis_2.png)
+Using [Godot Engine SDK](https://github.com/GodotNuts/appwrite-sdk)
 
-- [X] Account (client/server)
-- [X] Users (server)
-- [X] Teams (client/server)
-- [X] Database (client/server)
-- [X] Storage  (client/server)
-- [X] Functions (client/server)
-- [X] Localization (client/server)
-- [X] Avatars (client/server)
-- [X] Health (server)
-- [X] Realtime (client)
+![firefox_EHOGpTX4G0](https://user-images.githubusercontent.com/45271396/139595308-3b865923-1bcb-4709-9979-76969a266ea4.png)
 
