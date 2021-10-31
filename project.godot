@@ -1,0 +1,179 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AccountTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Account/account_task.gd"
+}, {
+"base": "Node",
+"class": "AppwriteAccount",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Account/account.gd"
+}, {
+"base": "Node",
+"class": "AppwriteAvatars",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Avatars/avatars.gd"
+}, {
+"base": "Node",
+"class": "AppwriteDatabase",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Database/database.gd"
+}, {
+"base": "Node",
+"class": "AppwriteFunctions",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Functions/functions.gd"
+}, {
+"base": "Node",
+"class": "AppwriteHealth",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Health/health.gd"
+}, {
+"base": "Node",
+"class": "AppwriteLocalization",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Localization/locale.gd"
+}, {
+"base": "Node",
+"class": "AppwriteRealtime",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Realtime/realtime.gd"
+}, {
+"base": "Node",
+"class": "AppwriteStorage",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Storage/storage.gd"
+}, {
+"base": "Node",
+"class": "AppwriteTeams",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Teams/teams.gd"
+}, {
+"base": "Node",
+"class": "AppwriteUsers",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Users/users.gd"
+}, {
+"base": "Reference",
+"class": "AvatarsTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Avatars/avatars_task.gd"
+}, {
+"base": "Reference",
+"class": "DatabaseTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Database/database_task.gd"
+}, {
+"base": "Reference",
+"class": "FunctionsTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Functions/functions_task.gd"
+}, {
+"base": "Reference",
+"class": "HealthTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Health/health_task.gd"
+}, {
+"base": "Reference",
+"class": "LocaleTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Localization/locale_task.gd"
+}, {
+"base": "PanelContainer",
+"class": "Message",
+"language": "GDScript",
+"path": "res://scn/message/message.gd"
+}, {
+"base": "PanelContainer",
+"class": "MyMessage",
+"language": "GDScript",
+"path": "res://scn/my_message/my_message.gd"
+}, {
+"base": "Reference",
+"class": "Rule",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Database/rule.gd"
+}, {
+"base": "Reference",
+"class": "StorageTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Storage/storage_task.gd"
+}, {
+"base": "Reference",
+"class": "TaskResponse",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Appwrite/task_response.gd"
+}, {
+"base": "Reference",
+"class": "TeamsTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Teams/teams_task.gd"
+}, {
+"base": "Reference",
+"class": "UsersTask",
+"language": "GDScript",
+"path": "res://addons/appwrite-sdk/Users/users_task.gd"
+} ]
+_global_script_class_icons={
+"AccountTask": "",
+"AppwriteAccount": "",
+"AppwriteAvatars": "",
+"AppwriteDatabase": "",
+"AppwriteFunctions": "",
+"AppwriteHealth": "",
+"AppwriteLocalization": "",
+"AppwriteRealtime": "",
+"AppwriteStorage": "",
+"AppwriteTeams": "",
+"AppwriteUsers": "",
+"AvatarsTask": "",
+"DatabaseTask": "",
+"FunctionsTask": "",
+"HealthTask": "",
+"LocaleTask": "",
+"Message": "",
+"MyMessage": "",
+"Rule": "",
+"StorageTask": "",
+"TaskResponse": "",
+"TeamsTask": "",
+"UsersTask": ""
+}
+
+[application]
+
+config/name="appwrite-sdk.chat"
+run/main_scene="res://scn/MAIN/main.tscn"
+config/icon="res://addons/appwrite-sdk/icon.svg"
+
+[autoload]
+
+Appwrite="*res://addons/appwrite-sdk/Appwrite/appwrite.gd"
+
+[display]
+
+window/dpi/allow_hidpi=true
+window/handheld/orientation="portrait"
+window/size/width.Android=512
+window/size/height.Android=300
+window/stretch/mode.Android="2d"
+window/stretch/aspect.Android="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/appwrite-sdk/plugin.cfg" )
+
+[rendering]
+
+quality/driver/driver_name=false
+environment/default_environment="res://default_env.tres"
